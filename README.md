@@ -1,12 +1,38 @@
 # How to run
 
+ProgrammableTokenTransfer.sol deployed on
+1) Fuji Testnet => 0xD1a7A0Ef93Ca5056A2F44cC1dc4ee63d770D987b
+2) Polygon mumbai => 0x172cB4b1d00B560025f22eCe88a145f4c77e2947
+
+Can be deployed on any network to extend escrow functionality
+
+TokenTransfer.sol deployed on
+Fuji Testnet -> 0x6846Fff86FCC3e45F49796c28929cEAD7faBe0AB
+
+To build android app, clone repository and open CoinEase folder
+run commands
+
+```
+./gradlew build
+adb install -r your_app.apk
+```
+
+To build "Particle Contract Calls" or "Token Transfer" backend, open the folders and run commands
+
+```
+npm install
+npm start
+```
+
+backend deployed on https://http-nodejs-vkx8.vercel.app
+
 # Vision
 Onboarding new users to crypto/web3 ecosystem
 
 # Description
 CoinEase: Blockchain/Web3 Crypto App with Particle Network Integration
 
-# Our project aims to provide a user-friendly and secure platform for individuals entering the web3 ecosystem. Leveraging the Particle Network for seamless onboarding through various authentication methods such as Google accounts, phone numbers, and social media accounts, we empower beginners to engage with blockchain technology effortlessly.
+Our project aims to provide a user-friendly and secure platform for individuals entering the web3 ecosystem. Leveraging the Particle Network for seamless onboarding through various authentication methods such as Google accounts, phone numbers, and social media accounts, we empower beginners to engage with blockchain technology effortlessly.
 
 # Key Features:
 
