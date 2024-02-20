@@ -1,3 +1,8 @@
+# Oversimplication
+Bob is new to crypto world. He wants to do all the amazing things like play games in web3, send any amount of money to anyone accross the world etc, access web3 apps. But he doesn't understand why everything in crypto is so complex. He gets to know about our app coinease. Using coinease, he doesn't have to care about chain, he can send cross chain payments, he doesn't need to know receiver's chain. He can just make the token transfer and they will be transferred. If he is worried he may send tokens to wrong address, we got him covered. He can revert his transactions too! Also, not to mention, he can use google accounts and phone numbers to access this wallet.
+
+He can also buy crypto from anyone around the world, trustlessly! And he can sell any excess tokens too, without going all technical!
+
 # How to run
 
 ProgrammableTokenTransfer.sol deployed on
@@ -29,11 +34,6 @@ backend deployed on https://http-nodejs-vkx8.vercel.app
 # Architecture
 
 ![image](https://github.com/raehat/coinease/assets/77321971/98d8e60b-3480-4578-989b-9c204a3e1964)
-
-# Oversimplication
-Bob is new to crypto world. He wants to do all the amazing things like play games in web3, send any amount of money to anyone accross the world etc, access web3 apps. But he doesn't understand why everything in crypto is so complex. He gets to know about our app coinease. Using coinease, he doesn't have to care about chain, he can send cross chain payments, he doesn't need to know receiver's chain. He can just make the token transfer and they will be transferred. If he is worried he may send tokens to wrong address, we got him covered. He can revert his transactions too! Also, not to mention, he can use google accounts and phone numbers to access this wallet.
-
-He can also buy crypto from anyone around the world, trustlessly! And he can sell any excess tokens too, without going all technical!
 
 Coinease is a dream come true for Bob
 
