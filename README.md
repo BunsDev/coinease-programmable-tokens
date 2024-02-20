@@ -26,6 +26,11 @@ npm start
 
 backend deployed on https://http-nodejs-vkx8.vercel.app
 
+#Architecture
+
+![image](https://github.com/raehat/coinease/assets/77321971/98d8e60b-3480-4578-989b-9c204a3e1964)
+
+
 # Vision
 Onboarding new users to crypto/web3 ecosystem
 
