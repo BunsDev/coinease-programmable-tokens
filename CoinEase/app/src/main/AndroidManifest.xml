@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-feature android:name="android.hardware.camera"/>
+    <uses-feature android:name="android.hardware.camera.autofocus"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+
+    <application
+        android:name=".ParticleApp"
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@drawable/app_logo"
+        android:usesCleartextTraffic="true"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/app_logo"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.ParticleApp"
+        tools:targetApi="31">
+        <activity
+            android:name=".ui.particleAppScreen.ParticleApp"
+            android:exported="true"
+            android:label="@string/app_name"
+            android:theme="@style/Theme.ParticleApp">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.particle.network.controller.WebActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@style/ThemeAuthWeb">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="pn${PN_APP_ID}" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="particle.network.project_id"
+            android:value="${PN_PROJECT_ID}" />
+        <meta-data
+            android:name="particle.network.project_client_key"
+            android:value="${PN_PROJECT_CLIENT_KEY}" />
+        <meta-data
+            android:name="particle.network.app_id"
+            android:value="${PN_APP_ID}" />
+        <!--   Particle Network config end     -->
+
+        <activity
+            android:name="com.particle.network.controller.AuthActivity"
+            android:exported="false"
+            android:theme="@style/ThemeAuthWeb">
+            <intent-filter>
+                <action android:name="network.particle.action.auth" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <!-- Particle Connect Redirect Callback -->
+        <activity
+            android:name="com.connect.common.controller.RedirectActivity"
+            android:exported="true"
+            android:launchMode="singleTask"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:scheme="connect${PN_APP_ID}" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="particle.network.project_client_key"
+            android:value="${PN_PROJECT_CLIENT_KEY}" />
+
+        <meta-data
+            android:name="particle.network.app_id"
+            android:value="${PN_APP_ID}" />
+
+        <meta-data
+            android:name="particle.network.project_id"
+            android:value="${PN_PROJECT_ID}" />
+
+    </application>
+
+</manifest>
